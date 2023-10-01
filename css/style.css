@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #deab5f;
+  --primary-color:#312e2e;
+}
+body{
+  background-color: #100e0f;
+  font-family: 'Playfair Display', serif;
+}
+/* Utility Styles */
+button{
+  padding: 10px 40px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* Navbar */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding-top: 10px; 
+}
+.navbar .logo{
+  cursor: pointer;
+  font-size: 30px;
+
+}
+.navbar i{
+  display: none;
+}
+.navbar ul{
+  list-style-type: none;
+}
+.navbar ul li{
+  display: inline-block;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  padding-bottom: 8px;
+}
+.navbar ul li a:hover{
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+@media screen and (max-width:515px) {
+  .navbar{
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right:10px ;
+  }
+  .navbar .logo{
+    text-align: left;
+    color: var(--main-color);
+  }
+
+  .navbar ul{
+    display: none;
+  }
+  .navbar i{
+    display: block;
+    font-size: 25px;
+    color: var(--main-color);
+  }
+}
+/* Nvabar End */
+
+.main{
+  background-image: url(../images/pexels-nao-triponez-129207.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.main-heading{
+  position: absolute;
+  top: 7rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+  text-transform: uppercase;
+}
+.primary-heading{
+  position: absolute;
+  bottom: 5rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+  margin-bottom: -30px;
+  text-transform: uppercase;
+}
+.main-btn{
+  position: absolute;
+  bottom: 4rem;
+  margin-top: 10px;
+  transform: translateY(60px);
+  -webkit-transform: translateY(60px);
+  -moz-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  -o-transform: translateY(60px);
+}
+/* Header End */
+
+#our-story{
+  /* height: 100vh; */
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img{
+  width: 400px;
+  height: 400px;
+  background-image: url(../images/pexels-chitokan-2183027-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+.title-style{
+  display: flex;
+  align-items: center;
+}
+.title{
+  font-size: 3.5rem;
+  color: #fff;
+  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+}
+.line{
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-120px);
+  -webkit-transform: translateX(-120px);
+  -moz-transform: translateX(-120px);
+  -ms-transform: translateX(-120px);
+  -o-transform: translateX(-120px);
+}
+.section-content p{
+  max-width: 500px;
+  color: #fff;
+  line-height: 20px;
+  margin: 20px 0;
+  font-family: sans-serif;
+
+}
+@media screen and (max-width:515px) {
+  .section-content,
+  .coffee-container{
+    margin-left: 15px;
+  }
+  .img-container{
+    margin: 15px 0 0 15px;
+  }
+
+ 
+}
+/* coffee */
+.coffee-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap ;
+  margin-top: 10rem;
+}
+.content-section p {
+  max-width: 500px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  color: #fff;
+}
+.title-two{
+  color: #fff;
+  font-size: 3rem;
+}
+.img-2{
+  width: 400px;
+  height: 400px;
+}
+/* End */
+
+
+/* Products */
+.products{
+  margin-top: 5rem;
+  color: #fff;
+}
+.title-three{
+  font-size: 4rem;
+  margin: 10rem 0 6rem 4rem;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 4rem;
+  margin-bottom: 100px;
+  transition: .5s;
+
+}
+.card-img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -60px;
+}
+.img-one{
+  background-image: url(../images/1.png);
+  background-position: center;
+  background-size: cover;
+}
+.img-two{
+  background-image: url(../images/2.png);
+  background-position: center;
+  background-size: cover;
+}
+.img-three{
+  background-image: url(../images/3.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-title{
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.card .items p{
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+.card:hover{
+  
+  background-color: var(--main-color);
+  color: #000;
+}
+
+/* footer */
+footer{
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+footer .container{
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+.heading-info{
+  margin-bottom: 20px;
+}
+footer p{
+  line-height: 25px;
+}
+span{
+  color: var(--main-color);
+}
+.para{
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 15px;
+
+}
+.para span{
+  font-size: 1.5rem;
+  font-family: Playfair;
+}
+@media screen and (max-width:515px) {
+  .para span{
+    font-size: 1rem;
+  }
+}
